@@ -1,0 +1,25 @@
+{
+  "name": "video-call-cdn",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --ignore-path .gitignore . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "export NODE_ENV=production && node server.js",
+    "start:dev": "nodemon server.js"
+  },
+  "author": "Afa <ifundeasy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/middie": "^8.1.0",
+    "@fastify/static": "^6.6.0",
+    "fastify": "^4.10.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
